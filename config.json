@@ -1,0 +1,25 @@
+{
+    "keywords": {
+        "trump": ["potus","trump"],
+        "hillary": ["hillary"],
+        "billgates": ["billgates"],
+        "putin": ["putin"],
+        "merkel": ["merkel"],
+        "elonmusk": ["elonmusk"]
+    },
+    "twitter": {
+        "access_token": "",
+        "access_token_secret": "",
+        "consumer_key": "",
+        "consumer_secret": ""
+    },
+    "output":{
+        "smooth_fast":"/var/www/html/index.txt",
+        "smooth_slow": "/var/www/html/index2.txt"
+    },
+    "config": {
+        "debug": true,
+        "host": "localhost",
+        "port": 8002
+    }
+}
