@@ -1,6 +1,7 @@
 from pyspark import SparkContext
 from pyspark.streaming import StreamingContext
 import json
+import time
 
 import nltk
 nltk.download('vader_lexicon')
@@ -15,6 +16,7 @@ port = 8002
 
 smooth_fast = None
 smooth_slow = None
+decay_window = None
 
 
 # Read config values
@@ -25,6 +27,7 @@ with open('config.json','r') as f:
     host = data["config"]["host"]
 
     smooth_fast = data["output"]["smooth_fast"]
+    decay_window = data["output"]["decay_window"]
     smooth_slow = data["output"]["smooth_slow"]
 
 
@@ -46,11 +49,11 @@ lines = ssc.socketTextStream(host, port)
 # define the update function
 def decaying_window(newVals, currentAvg):
     if currentAvg is None:
-       currentAvg = mean(newVals)
+       currentAvg = sum(newVals)/len(newVals)
 
     if len(newVals) > 0:
-        return (1.0-1e-6)*currentAvg + mean(newVals) #sum(currentCount, countState)
-    return currentVal
+        return (1.0-1e-6)*currentAvg + sum(newVals)/len(newVals) 
+    return currentAvg
 
 def smooth_update_fast(newVals, currentVal):
 
@@ -97,54 +100,48 @@ def splitTweets(tweet):
             return (terms[k], sentimentScore)
     return ("no category", sentimentScore)
 
-    """
-    if "trump" in tweet or "potus" in tweet:
-        return ("trump", sentimentScore)
-    elif "hillary" in tweet:
-        return ("hillary", sentimentScore)
-    elif "billgates" in tweet:
-        return ("billgates", sentimentScore)
-    elif "putin" in tweet or "путин" in tweet:
-        return ("putin", sentimentScore)
-    elif "merkel" in tweet:
-        return ("merkel", sentimentScore)
-    elif "elonmusk" in tweet:
-        return ("elonmusk", sentimentScore)
-
-    """
-
 def toFile(filename, x):
     with open(filename,'w') as f:
         f.write(x)
 
 
-
-# Split each line into words
-# reduce by key will be used used if we have multiple terms
-#pscores = lines.map(lambda line: float(sia.polarity_scores(line)["compound"])).reduce(lambda x,y: x+y).map(lambda x: ("trump", x))
-
 #reduceByKeyWindow? <-- TODO?
-pscores = lines.map(lambda x: splitTweets(x)) #.reduceByKey(lambda x,y: x+y)
-
-smooth_count_fast = pscores.updateStateByKey(smooth_update_fast)
-smooth_count_slow = pscores.updateStateByKey(smooth_update_slow)
-
-if debug:
-    smooth_count_fast.pprint()
+pscores = lines.map(lambda x: splitTweets(x))
 
 
 def resout(filename, rdd):
+    """
+    Writes the summary (current values) to a file
+    """
     with open(filename,'w') as f:
         dictionary = rdd.collectAsMap()
 
         for key, value in dictionary.items():
             f.write(str(key) + " " + str(value) + "\n")
 
+def resout_log(filename, rdd):
+    """
+    Writes a continuous log to a file
+    """
+    with open(filename,'a') as f:
+        dictionary = rdd.collectAsMap()
+        dictionary["time"] = int(time.time())
+        f.write(json.dumps(dictionary) + "\n")
+
 if smooth_fast != None :
-    smooth_count_fast.foreachRDD(lambda x,y : resout(smooth_fast,y))
+    smooth_count_fast = pscores.updateStateByKey(smooth_update_fast)
+    smooth_count_fast.foreachRDD(lambda x,y : resout_log(smooth_fast,y))
 
 if smooth_slow != None:
-    smooth_count_slow.foreachRDD(lambda x,y : resout(smooth_slow,y))
+    smooth_count_slow = pscores.updateStateByKey(smooth_update_slow)
+    smooth_count_slow.foreachRDD(lambda x,y : resout_log(smooth_slow,y))
+
+if decay_window != None:
+    decay_window_count= pscores.updateStateByKey(decaying_window)
+    decay_window_count.foreachRDD(lambda x,y : resout_log(decay_window,y))
+
+    if debug:
+        decay_window_count.pprint()
 
 
 ssc.start()             # Start the computation

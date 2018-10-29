@@ -44,7 +44,11 @@ how it can be accomplished.
         "billgates": ["billgates"],
         "putin": ["putin"],
         "merkel": ["merkel"],
-        "elonmusk": ["elonmusk"]
+        "elonmusk": ["elonmusk"],
+        "junker_eu" : ["junckereu", "junker", "jean claude junker"],
+        "donald_tusk_eu":["eucopresident", "donald tusk"],
+        "brexit" : ["brexit"],
+        "theresa_may":["theresa_may", "theresa may"]
     },
     "twitter": {
         "access_token": "",
@@ -54,10 +58,11 @@ how it can be accomplished.
     },
     "output":{
         "smooth_fast":"/var/www/html/index.txt",
-        "smooth_slow": "/var/www/html/index2.txt"
+        "smooth_slow": null,
+        "decay_window": "/var/www/html/decay_window.txt"
     },
     "config": {
-        "debug": true,
+        "debug": false,
         "host": "localhost",
         "port": 8002
     }
