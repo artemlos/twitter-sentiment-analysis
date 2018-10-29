@@ -1,0 +1,159 @@
+{"time": 1540849868}
+{"time": 1540849869}
+{"time": 1540849869}
+{"time": 1540849870}
+{"time": 1540849871}
+{"time": 1540849873}
+{"time": 1540849874}
+{"time": 1540849875}
+{"time": 1540849875}
+{"time": 1540849876}
+{"time": 1540849877}
+{"time": 1540849878}
+{"time": 1540849879}
+{"time": 1540849880}
+{"time": 1540849881}
+{"time": 1540849881}
+{"no category": 0.0, "time": 1540849884}
+{"hillary": 0.7003, "no category": 0.0, "trump": -0.5106, "time": 1540849886}
+{"trump": -0.5679, "no category": 0.0, "time": 1540849888}
+{"trump": 0.0, "no category": 0.0, "time": 1540849890}
+{"trump": 0.0258, "no category": 0.0, "time": 1540849892}
+{"trump": -0.9525, "no category": 0.0, "time": 1540849893}
+{"trump": -0.2023, "no category": 0.0, "hillary": 0.0, "time": 1540849895}
+{"trump": -0.6124, "no category": 0.0, "elonmusk": 0.2225, "time": 1540849897}
+{"trump": -0.5267, "no category": 0.0, "time": 1540849898}
+{"trump": 0.4015, "no category": 0.0, "brexit": -0.4019, "time": 1540849900}
+{"trump": -0.8766, "no category": 0.0, "time": 1540849901}
+{"trump": 0.6597, "no category": 0.0, "time": 1540849903}
+{"trump": -0.5267, "no category": 0.0, "time": 1540849905}
+{"trump": 0.6239, "no category": 0.0, "merkel": 0.128, "time": 1540849906}
+{"trump": 0.0, "no category": 0.0, "merkel": -0.296, "time": 1540849908}
+{"trump": -0.6652, "no category": 0.0, "time": 1540849909}
+{"trump": 0.8583, "no category": -0.4939, "elonmusk": 0.5859, "time": 1540849911}
+{"trump": 0.0, "no category": 0.0, "merkel": 0.0, "time": 1540849912}
+{"trump": -0.5267, "no category": 0.0, "merkel": 0.504, "hillary": 0.0, "brexit": -0.5719, "time": 1540849914}
+{"trump": 0.4019, "no category": 0.0, "putin": 0.9307, "time": 1540849915}
+{"trump": -0.5563, "no category": 0.0, "hillary": 0.228, "time": 1540849917}
+{"trump": -0.8189, "no category": 0.0, "time": 1540849918}
+{"trump": -0.7823, "no category": 0.0, "merkel": 0.0, "time": 1540849920}
+{"trump": 0.2732, "no category": 0.0, "time": 1540849921}
+{"trump": -0.765, "no category": 0.0, "time": 1540849923}
+{"trump": -0.5951, "no category": 0.0, "hillary": 0.0, "merkel": 0.0, "time": 1540849924}
+{"trump": -0.5574, "no category": 0.0, "brexit": 0.0, "hillary": 0.0, "time": 1540849926}
+{"trump": 0.4019, "no category": 0.0, "brexit": -0.2263, "time": 1540849927}
+{"trump": 0.0, "no category": -0.7783, "brexit": 0.0, "elonmusk": 0.0, "putin": 0.6227, "merkel": 0.296, "time": 1540849929}
+{"trump": -0.896, "no category": 0.0, "hillary": 0.0644, "brexit": -0.3182, "time": 1540849931}
+{"trump": 0.1225, "no category": 0.3182, "merkel": 0.0, "time": 1540849933}
+{"trump": 0.0, "no category": 0.0, "time": 1540849934}
+{"trump": 0.7964, "no category": 0.0, "time": 1540849936}
+{"trump": 0.8301, "no category": 0.0, "time": 1540849937}
+{"trump": -0.8271, "no category": 0.0, "merkel": 0.0, "time": 1540849939}
+{"trump": 0.6615, "no category": 0.0, "elonmusk": -0.6697, "merkel": 0.0, "time": 1540849940}
+{"trump": 0.0, "no category": 0.0, "time": 1540849941}
+{"trump": 0.3031, "no category": 0.0, "time": 1540849943}
+{"trump": -0.8934, "no category": 0.0, "time": 1540849944}
+{"trump": 0.6421, "no category": 0.0, "time": 1540849946}
+{"trump": -0.25, "no category": 0.0, "merkel": -0.9343, "time": 1540849947}
+{"putin": 0.3561, "no category": 0.0, "trump": -0.34, "hillary": -0.7236, "time": 1540849949}
+{"trump": -0.5267, "no category": 0.0, "time": 1540849950}
+{"trump": 0.0, "no category": 0.0, "hillary": 0.7506, "time": 1540849952}
+{"trump": -0.6808, "no category": 0.0, "time": 1540849953}
+{"trump": 0.0, "no category": 0.0, "hillary": 0.636, "time": 1540849955}
+{"trump": -0.34, "no category": 0.0, "time": 1540849956}
+{"no category": 0.0, "trump": -0.384, "hillary": -0.1511, "putin": 0.0, "time": 1540849957}
+{"trump": 0.6705, "no category": 0.0, "hillary": 0.3612, "putin": 0.0, "time": 1540849959}
+{"trump": -0.4767, "no category": 0.0, "time": 1540849961}
+{"trump": 0.0, "no category": 0.0, "merkel": 0.0, "time": 1540849962}
+{"trump": -0.8398, "no category": 0.0, "merkel": -0.636, "time": 1540849963}
+{"trump": -0.234, "no category": 0.0, "brexit": -0.5983, "time": 1540849964}
+{"trump": 0.0276, "no category": 0.0, "time": 1540849966}
+{"trump": -0.6575, "no category": 0.0, "brexit": 0.0, "time": 1540849968}
+{"putin": -0.8172, "trump": -0.9428, "no category": 0.0, "time": 1540849969}
+{"trump": 0.7003, "no category": 0.0, "brexit": 0.0, "time": 1540849970}
+{"trump": 0.0258, "no category": 0.0, "time": 1540849971}
+{"trump": 0.743, "no category": 0.0, "hillary": 0.0, "time": 1540849973}
+{"brexit": -0.4588, "no category": 0.0, "trump": -0.9273, "hillary": -0.5972, "merkel": 0.296, "time": 1540849974}
+{"trump": -0.9526, "no category": 0.0, "hillary": -0.4215, "time": 1540849976}
+{"no category": 0.0, "trump": 0.8954, "time": 1540849977}
+{"trump": -0.7351, "no category": 0.0, "time": 1540849978}
+{"trump": -0.8271, "no category": 0.0, "brexit": 0.8702, "time": 1540849980}
+{"trump": -0.1739, "no category": 0.0, "elonmusk": 0.8221, "time": 1540849981}
+{"trump": -0.9733, "no category": 0.0, "brexit": 0.2023, "merkel": 0.3802, "time": 1540849983}
+{"trump": 0.2714, "no category": 0.0, "merkel": 0.4019, "time": 1540849984}
+{"trump": -0.558, "no category": 0.0, "time": 1540849985}
+{"trump": -0.4208, "no category": 0.0, "brexit": 0.0, "time": 1540849986}
+{"trump": 0.3818, "no category": 0.0, "merkel": -0.3365, "time": 1540849988}
+{"trump": -0.9081, "no category": 0.0, "time": 1540849989}
+{"trump": -0.8625, "no category": 0.0, "time": 1540849990}
+{"trump": -0.4767, "no category": 0.0, "time": 1540849992}
+{"trump": -0.34, "no category": 0.0, "brexit": -0.1531, "time": 1540849993}
+{"trump": -0.5709, "no category": 0.3182, "time": 1540849994}
+{"trump": -0.9167, "no category": 0.0, "time": 1540849996}
+{"trump": -0.6652, "no category": 0.0, "hillary": 0.0, "time": 1540849997}
+{"trump": -0.9697, "no category": 0.0, "time": 1540849998}
+{"trump": -0.9072, "no category": 0.0, "time": 1540850000}
+{"trump": -0.652, "no category": 0.0, "time": 1540850001}
+{"trump": -0.856, "no category": 0.0, "time": 1540850002}
+{"no category": 0.0, "trump": 0.3182, "time": 1540850004}
+{"trump": 0.0, "no category": 0.0, "putin": 0.0, "hillary": 0.5719, "time": 1540850005}
+{"trump": 0.8392, "no category": 0.0, "hillary": 0.0, "time": 1540850007}
+{"trump": -0.8561, "no category": 0.0, "merkel": -0.25, "time": 1540850008}
+{"trump": -0.5255, "no category": 0.0, "brexit": -0.1103, "time": 1540850009}
+{"trump": 0.0, "no category": 0.0, "hillary": 0.2023, "brexit": -0.8402, "time": 1540850011}
+{"trump": -0.7096, "no category": 0.0, "time": 1540850012}
+{"trump": 0.5093, "no category": 0.0, "time": 1540850013}
+{"trump": 0.0, "no category": 0.0, "time": 1540850015}
+{"trump": -0.3751, "no category": 0.0, "time": 1540850016}
+{"trump": 0.9474, "no category": 0.3182, "time": 1540850017}
+{"trump": -0.9618, "no category": 0.0, "brexit": -0.5574, "elonmusk": -0.4003, "time": 1540850018}
+{"trump": 0.7088, "no category": 0.0, "time": 1540850020}
+{"trump": 0.6425, "no category": 0.0, "merkel": 0.0, "time": 1540850021}
+{"no category": 0.0, "trump": -0.4215, "time": 1540850023}
+{"putin": 0.0, "no category": 0.0, "trump": 0.0, "time": 1540850024}
+{"trump": -0.6114, "no category": 0.0, "time": 1540850026}
+{"trump": 0.0, "no category": 0.0, "time": 1540850027}
+{"trump": 0.8316, "no category": 0.0, "theresa_may": 0.0, "time": 1540850028}
+{"no category": 0.0, "trump": -0.7717, "time": 1540850029}
+{"trump": -0.8519, "no category": 0.0, "brexit": 0.1027, "time": 1540850031}
+{"trump": -0.9798, "no category": 0.0, "time": 1540850032}
+{"trump": 0.6852, "no category": 0.0, "time": 1540850034}
+{"trump": 0.0, "no category": 0.0, "time": 1540850035}
+{"trump": -0.9612, "no category": 0.0, "putin": 0.3612, "brexit": 0.2732, "time": 1540850037}
+{"trump": -0.9789, "no category": 0.0, "time": 1540850038}
+{"trump": 0.1531, "no category": 0.0, "time": 1540850040}
+{"trump": 0.8035, "brexit": 0.0, "no category": 0.4215, "elonmusk": 0.0, "time": 1540850041}
+{"trump": 0.4035, "no category": 0.3182, "time": 1540850042}
+{"trump": -0.4898, "no category": 0.0, "time": 1540850044}
+{"trump": -0.8934, "no category": 0.0, "time": 1540850045}
+{"trump": 0.5267, "no category": 0.0, "hillary": 0.0, "time": 1540850047}
+{"trump": -0.69, "no category": 0.0, "time": 1540850048}
+{"trump": -0.3612, "no category": 0.0, "time": 1540850049}
+{"trump": 0.8885, "no category": 0.0, "elonmusk": -0.2899, "merkel": 0.0, "time": 1540850050}
+{"trump": 0.0, "no category": 0.0, "time": 1540850052}
+{"trump": -0.3655, "no category": 0.0, "hillary": -0.2732, "time": 1540850053}
+{"trump": -0.9584, "no category": 0.0, "elonmusk": -0.3007, "time": 1540850054}
+{"elonmusk": -0.3007, "no category": 0.0, "trump": 0.6597, "merkel": -0.3182, "time": 1540850056}
+{"trump": 0.2732, "no category": 0.0, "time": 1540850057}
+{"no category": 0.0, "trump": -0.5562, "elonmusk": -0.3007, "putin": -0.1933, "time": 1540850058}
+{"trump": -0.8313, "no category": 0.0, "time": 1540850060}
+{"trump": 0.3818, "no category": 0.0, "time": 1540850061}
+{"trump": 0.8999, "merkel": 0.0, "no category": 0.0, "time": 1540850063}
+{"trump": 0.5267, "no category": 0.0, "elonmusk": -0.4159, "time": 1540850064}
+{"trump": 0.0276, "no category": 0.0, "time": 1540850065}
+{"trump": -0.4157, "no category": 0.0516, "time": 1540850066}
+{"trump": 0.9872, "no category": 0.0, "time": 1540850068}
+{"trump": -0.3818, "no category": 0.0, "hillary": 0.0, "putin": -0.7524, "time": 1540850069}
+{"trump": 0.2023, "no category": 0.0, "time": 1540850070}
+{"hillary": 0.8316, "trump": -0.8257, "no category": 0.0, "time": 1540850072}
+{"trump": -0.6072, "no category": 0.0, "time": 1540850073}
+{"trump": 0.94, "time": 1540850075}
+{"trump": 0.5301, "merkel": 0.0, "no category": 0.0, "brexit": 0.0, "time": 1540850076}
+{"trump": 0.0, "no category": 0.0, "merkel": 0.0, "time": 1540850078}
+{"trump": 0.5994, "no category": 0.0, "merkel": -0.0258, "time": 1540850079}
+{"trump": 0.0243, "no category": 0.0, "merkel": -0.6717, "time": 1540850080}
+{"trump": -0.9647, "no category": 0.0, "brexit": -0.4357, "time": 1540850082}
+{"trump": 0.7992, "no category": 0.0, "time": 1540850084}
+{"trump": 0.7783, "no category": 0.0, "time": 1540850085}
+{"trump": -0.8225, "no category": 0.0, "time": 1540850086}
+{"trump": 0.765, "no category": 0.0, "merkel": 0.5499, "time": 1540850088}
