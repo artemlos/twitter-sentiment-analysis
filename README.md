@@ -6,7 +6,7 @@
 * Java 8 ([installation tutorial](https://tecadmin.net/install-oracle-java-8-ubuntu-via-ppa/))
 * Apache 2  Server (optional, if you want others to access ther result)
 * Twitter API keys ([apply here](https://developer.twitter.com/en/apply-for-access))
-* Python3 packages: `tweepy` and `nltk` (there might be some more, please check error messages if such would occur)
+* Python3 packages: `tweepy`, `twython` and `nltk` (there might be some more, please check error messages if such would occur)
 
 > If you want to print to a local webserver such as Apache, make sure to
 enable write access using `chown -R user:user /var/www/html`. If you don't use Apache,
