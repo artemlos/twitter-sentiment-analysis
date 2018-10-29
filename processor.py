@@ -44,13 +44,13 @@ lines = ssc.socketTextStream(host, port)
 
 
 # define the update function
-def updateTotalCount(newVals, currentVal):
-    if currentVal is None:
-       currentVal = float(0.0)
+def decaying_window(newVals, currentAvg):
+    if currentAvg is None:
+       currentAvg = mean(newVals)
 
     if len(newVals) > 0:
-        return (1.0-1e-6)*currentVal + mean(newVals) #sum(currentCount, countState)
-    return (1.0-1e-6)*currentVal
+        return (1.0-1e-6)*currentAvg + mean(newVals) #sum(currentCount, countState)
+    return currentVal
 
 def smooth_update_fast(newVals, currentVal):
 
@@ -124,7 +124,7 @@ def toFile(filename, x):
 #pscores = lines.map(lambda line: float(sia.polarity_scores(line)["compound"])).reduce(lambda x,y: x+y).map(lambda x: ("trump", x))
 
 #reduceByKeyWindow? <-- TODO?
-pscores = lines.map(lambda x: splitTweets(x)).reduceByKey(lambda x,y: x+y)
+pscores = lines.map(lambda x: splitTweets(x)) #.reduceByKey(lambda x,y: x+y)
 
 smooth_count_fast = pscores.updateStateByKey(smooth_update_fast)
 smooth_count_slow = pscores.updateStateByKey(smooth_update_slow)
