@@ -59,7 +59,8 @@ how it can be accomplished.
     "output":{
         "smooth_fast":"/var/www/html/index.txt",
         "smooth_slow": null,
-        "decay_window": "/var/www/html/decay_window.txt"
+        "decay_window": "/var/www/html/decay_window.txt",
+        "actual_val" : "/var/www/html/actual_val.txt"
     },
     "config": {
         "debug": false,

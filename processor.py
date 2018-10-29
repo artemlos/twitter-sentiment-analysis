@@ -17,7 +17,7 @@ port = 8002
 smooth_fast = None
 smooth_slow = None
 decay_window = None
-
+actual_val = None
 
 # Read config values
 with open('config.json','r') as f:
@@ -29,6 +29,7 @@ with open('config.json','r') as f:
     smooth_fast = data["output"]["smooth_fast"]
     decay_window = data["output"]["decay_window"]
     smooth_slow = data["output"]["smooth_slow"]
+    actual_val = data["output"]["actual_val"]
 
 
     for k, v in data["keywords"].items():
@@ -142,6 +143,10 @@ if decay_window != None:
 
     if debug:
         decay_window_count.pprint()
+
+if actual_val != None:
+    pscores.foreachRDD(lambda x,y : resout_log(actual_val,y))
+
 
 
 ssc.start()             # Start the computation

@@ -12,15 +12,16 @@
         "theresa_may":["theresa_may", "theresa may"]
     },
     "twitter": {
-        "access_token": "",
-        "access_token_secret": "",
-        "consumer_key": "",
-        "consumer_secret": ""
+        "access_token": "64669961-BRk7NVofxaG4HTgbEGlHYDX8kIiPd9MiKt3pNlWD9",
+        "access_token_secret": "sDUm8KIMiDV6yOo3yrBVEhAojAwVjIKWzrWE7I3ffCzg4",
+        "consumer_key": "aJAmq21sw4bgE0uuJBKUvbAf4",
+        "consumer_secret": "r2i8qBDbAokLoUzJxStxXY2GGO6XlCCKFQeJtebNIDSqVs6uoO"
     },
     "output":{
         "smooth_fast":"/var/www/html/smooth_fast.txt",
         "smooth_slow": null,
-        "decay_window": "/var/www/html/decay_window.txt"
+        "decay_window": "/var/www/html/decay_window.txt",
+        "actual_val" : "/var/www/html/actual_val.txt"
     },
     "config": {
         "debug": false,
