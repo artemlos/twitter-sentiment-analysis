@@ -8,3 +8,5 @@ Exception in thread "JobGenerator" java.lang.OutOfMemoryError: Java heap space
 	at java.io.BufferedReader.readLine(BufferedReader.java:389)
 	at py4j.CallbackConnection.readBlockingResponse(CallbackConnection.java:169)
 ```
+
+Note that experiments were restarted several times due to crashes in actual_val.txt, decay_window.txt and smooth_fast.txt. This can be clearly observed in decay_window since it starts with small values that increase rapidly. actual_val.txt is the unprocessed data which just tells the sentiment score at that time.
