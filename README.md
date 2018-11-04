@@ -4,7 +4,7 @@
 
 * Apache Spark 2.3.2 with Hadoop ([download spark](http://spark.apache.org/downloads.html))
 * Java 8 ([installation tutorial](https://tecadmin.net/install-oracle-java-8-ubuntu-via-ppa/))
-* Apache 2  Server (optional, if you want others to access ther result)
+* Apache 2  Server (optional, if you want others to access their result)
 * Twitter API keys ([apply here](https://developer.twitter.com/en/apply-for-access))
 * Python3 packages: `tweepy`, `twython` and `nltk` (there might be some more, please check error messages if such would occur)
 
@@ -34,7 +34,23 @@ spark-submit processor.py
 how it can be accomplished.
 * If terminal 1 prints errors, please restart it.
 
+## Code specific
+* When the result is written to file, there are two functions available, `resout` and `resout_log`. The first
+one will only write the current state to a file whereas the latter will append the result (so that you can analyse it later).
+* If you want to dedicate most of the resources of the computer on this, we recommend to replace `local[2]` to `local[*]` when
+initializing the spark context and increase memory available to Spark, which can be achieved as shown below (in terminal 2):
+
+```
+$ source shell.sh
+spark-submit --num-executors 4 --driver-memory 64g --executor-memory 64g processor.py
+```
+
 ## Configuration file
+The configuration file has a structure similar to the one below. To be able to run the code, you need at least the twitter
+tokens and to ensure that the output files are writable.
+
+Keywords are configured as follows. Let's say you want to track `trump`. We know that people may refer to trump either by `potus` or `trump`.
+Therefore, we define these aliases in a list, i.e. `"trump": ["potus","trump"]`.
 
 ```
 {
@@ -69,3 +85,6 @@ how it can be accomplished.
     }
 }
 ```
+
+## Future 
+* https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#continuous-processing

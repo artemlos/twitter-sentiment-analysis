@@ -1,3 +1,7 @@
+"""
+Adapted from the code available at: http://www.awesomestats.in/spark-twitter-stream/
+"""
+
 import tweepy
 from tweepy import OAuthHandler
 from tweepy import Stream
@@ -65,6 +69,6 @@ if __name__ == "__main__":
     s.listen(5)                 # Now wait for client connection.
     c, addr = s.accept()        # Establish connection with client.
 
-    print( "Received request from: " + str( addr ) )
+    print( "Received request from: " + str(addr))
 
-    sendData( c )
+    sendData(c)

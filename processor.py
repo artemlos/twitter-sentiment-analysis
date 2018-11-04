@@ -43,12 +43,15 @@ sc.setLogLevel("ERROR")
 ssc = StreamingContext(sc, 1)
 ssc.checkpoint("checkpoint")
 
-# Create a DStream that will connect to hostname:port, like localhost:9999
+# Create a DStream
 lines = ssc.socketTextStream(host, port)
 
-
-# define the update function
+# Define the update functions
 def decaying_window(newVals, currentAvg):
+    """
+    Decaying window (i.e. a sum that "forgets" old values over time).
+    """
+
     if currentAvg is None:
        currentAvg = sum(newVals)/len(newVals)
 
@@ -57,6 +60,10 @@ def decaying_window(newVals, currentAvg):
     return currentAvg
 
 def smooth_update_fast(newVals, currentVal):
+    """
+    Keeps a smooth average of the values. If the batch contains
+    more than 1 element, an arithmetic mean will be computed first.
+    """
 
     if len(newVals) == 0 and currentVal is None:
         return 0
@@ -71,6 +78,11 @@ def smooth_update_fast(newVals, currentVal):
     return 0.99*currentVal + 0.01*sum(newVals)/len(newVals)
 
 def smooth_update_slow(newVals, currentVal):
+    """
+    Keeps a smooth average of the values. If the batch contains
+    more than 1 element, it will iterate through all of elements.
+    """
+
     if len(newVals) == 0 and currentVal is None:
         return 0
 
@@ -81,6 +93,10 @@ def smooth_update_slow(newVals, currentVal):
     return smooth_update_internal(newVals, currentVal)
 
 def smooth_update_internal(newVals, currentVal):
+    """
+    Helper functions for smooth_update_slow
+    """
+
     for val in newVals:
         if currentVal is None:
             currentVal = val
@@ -89,6 +105,9 @@ def smooth_update_internal(newVals, currentVal):
     return currentVal
 
 def splitTweets(tweet):
+    """
+    Split tweets into categories
+    """
 
     global sia
 
@@ -105,10 +124,8 @@ def toFile(filename, x):
     with open(filename,'w') as f:
         f.write(x)
 
-
-#reduceByKeyWindow? <-- TODO?
+# Split tweets into categories    
 pscores = lines.map(lambda x: splitTweets(x))
-
 
 def resout(filename, rdd):
     """
@@ -146,8 +163,6 @@ if decay_window != None:
 
 if actual_val != None:
     pscores.foreachRDD(lambda x,y : resout_log(actual_val,y))
-
-
 
 ssc.start()             # Start the computation
 ssc.awaitTermination()  # Wait for the computation to terminate
