@@ -88,4 +88,4 @@ Therefore, we define these aliases in a list, i.e. `"trump": ["potus","trump"]`.
 
 ## Future work
 Spark has recently added a continuous processing feature, which can be used instead of using mini-batch. At the time of writing, it's in experimental phase.
-Please read more [here](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#continuous-processing)
+Please read more [here](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#continuous-processing).
